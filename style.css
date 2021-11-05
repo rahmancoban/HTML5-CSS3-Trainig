@@ -251,11 +251,6 @@ body {
   
   /****************************Hover Overlay*********************************/
   
-  .bigcon {
-    z-index: -1;
-    position: relative;
-  }
-  
   .theContainer {
     width: 20%;
     position: relative;
