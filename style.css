@@ -1,0 +1,691 @@
+/****************************h1**********************************/
+body{
+    margin: 0;
+}
+
+.header{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 14px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+}
+
+.header::first-letter{
+    border: 2px solid black;
+    color: white;
+    background-color: dodgerblue;
+    padding: 1px 5px;
+}
+
+
+/****************************menu**********************************/
+
+.menu ul{
+    background-color: cornflowerblue;
+    padding: 15px;
+    margin-top: 120px;
+    width: 100%;
+    position: fixed; 
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu ul li a:hover{
+    background-color: rgb(48, 118, 247);
+}
+
+
+/****************************Sidebar**********************************/
+
+.sidebar{
+    background-color: rgb(88, 88, 88);
+    padding: 4px;
+    color: white;
+    width: 18%;
+    height: 5000px;
+    float: left;
+    margin-top: 173px;
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 7px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover{
+    color: rgb(255, 94, 0);
+}
+
+
+/****************************Section**********************************/
+
+.change{
+    padding: 15px;
+    width: 75%;
+    float: left;
+    margin-top: 173px;
+}
+
+.change header h2{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+
+.change footer{
+    background-color: burlywood;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 10%;
+    padding: 3px;
+}
+
+.change h4{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.change content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.bottom{
+    background-color: darkcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+summary{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.loginf{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+
+/****************************Overlapping Pictures as Background**********************************/
+
+
+#onend{
+    background: url(img/poeple.png) no-repeat right bottom, url(img/background.jpg) repeat left top;
+    background-size: 250px 60px, 200px 300px;
+    z-index: 0, 1;
+    padding: 17px;
+    margin-top: 30px;
+}
+
+.h3-onend{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+}
+
+
+/****************************Text Shadow**********************************/
+
+
+.forshadow{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.shadow1{
+    text-shadow: 20px -18px 6px #666
+}
+
+.shadow2{
+    color: white;
+    text-shadow: 3px 2px 2px #666
+}
+
+.shadow3{
+    color: red;
+    text-shadow: 3px 4px 2px green
+}
+
+
+
+
+/****************************Transition*********************************/
+
+.transition{
+    width: 150px;
+    height: 50px;
+    margin: 30px;
+    padding: 20px;
+    background: rgb(87, 112, 139);
+    color: white;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+.transition:hover{
+    width: 600px;
+}
+
+.tr{
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.tr1{
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.tr2{
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}
+
+.tr3{
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+.tr4{
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+
+/***************************Cards*******************************/
+
+.cards-container{
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+    border-top: 1px solid gray;
+    padding-top: 30px;
+}
+
+.cards img{
+    width: 100%;
+    height: auto;
+}
+
+.cards{
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.placename{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+/****************************Hover Overlay*********************************/
+
+
+.theContainer{
+    width: 20%;
+    position: relative;
+    margin-top: 10px;
+    float: left;
+    margin-left: 45px;
+}
+
+.topichover h2{
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(248, 172, 248);
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.avatar1{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.theOverlay{
+    position: absolute;
+    bottom: 100%;
+    right: 0%;
+    left: 0%;
+    background-color: #1782A7;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.9s linear;
+}
+
+.content-text{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+
+.theContainer:hover .theOverlay{
+    bottom: 0;
+    height: 100%;
+}
+
+.avatar2{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.theOverlay2{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    bottom: 0%;
+    background-color: #1782A7;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.7s ease;
+}
+
+
+.theContainer:hover .theOverlay2{
+    left: 0;
+    width: 100%;
+}
+
+.avatar3{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.theOverlay3{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: #1782A7;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s ease-in;
+}
+
+
+.theContainer:hover .theOverlay3{
+    height: 100%;
+}
+
+.avatar4{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.theOverlay4{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: #1782A7;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+
+.theContainer:hover .theOverlay4{
+    width: 100%;
+}
+
+
+/****************************Window Animation*********************************/
+/*
+.door1{
+    margin-top: 100px;
+    margin-left: 150px;
+    transform: perspective(400) rotateY(40deg);
+    transform-origin: 0% 0%;
+    animation: door 2s;
+}
+
+@keyframes door{
+    0%{
+        transform: perspective(400) rotateY(80deg);
+        transform-origin: 0% 0%;
+        animation-timing-function: ease;
+    }
+
+    50%{
+        transform: perspective(400) rotateY(0deg);
+        transform-origin: 0% 0%;
+        animation-timing-function: ease;
+    }
+
+    100%{
+        transform: perspective(400) rotateY(40deg);
+        transform-origin: 0% 0%;
+        animation-timing-function: ease;
+    }
+
+    */
+
+
+
+    /****************************Buttons*********************************/
+
+    .buttondiv{
+        border-top: 1px solid gray;
+        position: absolute;
+        margin-top: 300px;
+        padding-top: 50px;
+
+    }
+
+    .button{
+        font-family: monospace;
+        font-size: 20px;
+        margin-right: 40px;
+        margin-left: 50px;
+        padding: 14px;
+        color: white;
+        font-weight: bold;
+        transition: all 0.4s ease-in;  
+    }
+
+    .button-1{
+        color: darkolivegreen;
+        border: 1px solid darkolivegreen;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 3px 3px 3px;
+    }
+    .button-1:hover{
+        background-color: darkolivegreen;
+        color: white;
+    }
+
+    .button-2{
+        color: white;
+        border: 1px solid dodgerblue;
+        background-color: dodgerblue;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+
+
+    .button-3{
+        color: black;
+        border: 1px solid black;
+        background-color: white;
+        cursor: cell;
+        border-radius: 10px;
+    }
+    .button-3:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .button-4{
+        color: tomato;
+        border: 1px solid tomato;
+        background-color: white;
+        cursor: all-scroll;
+        border-radius: 30px;
+        box-shadow: 3px 3px 3px;
+    }
+    .button-4:hover{
+        background-color: tomato;
+        color: white;
+    }
+
+    .button-5{
+        color: saddlebrown;
+        border: 1px solid saddlebrown;
+        background-color: white;
+        cursor: progress;
+    }
+    .button-5:hover{
+        background-color: saddlebrown;
+        color: white;
+    }
+
+
+    .btn-arrow{
+        margin-top: 550px;
+        margin-left: 40px; 
+    }
+
+    .buttonarrow{
+        background-color: rgb(0, 177, 138);
+        color: white;
+        border-radius: 5px;
+        padding: 16px 32px;
+        text-align: center;
+        margin: 4px 50px;
+        cursor: pointer;
+        font-size: 25px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 18%;
+        transition: all 0.5s;
+        border: none;
+    }
+
+    .buttonarrow span{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+
+    .buttonarrow span::after{
+        content: '\00bb';
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .buttonarrow:hover span{
+        padding-right: 30px;
+    }
+
+    .buttonarrow:hover span::after{
+        opacity: 1;
+        right: 0;
+    }
+
+
+    .buttonarrow2{
+        background-color: rgb(226, 136, 0);
+        color: white;
+        border-radius: 12px;
+        padding: 14px 35px;
+        text-align: center;
+        margin: 4px 75px;
+        cursor: pointer;
+        font-size: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 18%;
+        transition: all 0.2s;
+        border: none;
+        box-shadow: 0 8px  0 #999;
+    }
+    .buttonarrow2:hover{
+        background-color: rgb(156, 94, 0);
+    }
+
+    .buttonarrow2:active{
+        background-color: rgb(156, 94, 0);
+        box-shadow: 0 2px 0 #666;
+        transform: translateY(8px);
+    }
+
+    .buttonarrow3{
+        
+        background-color: violet;
+        color: white;
+        border-radius: 12px;
+        padding: 18px 24px;
+        text-align: center;
+        margin: 4px 75px;
+        cursor: pointer;
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 18%;
+        transition: all 0.3s;
+        border: none;
+        box-shadow: 8px 1px 2px  0 #999;
+    }
+
+    .buttonarrow3:hover{
+        background-color: rgb(143, 0, 143);
+    }
+
+    .buttonarrow3:active{
+        background-color: rgb(143, 0, 143);
+        box-shadow: 0 2px 0 #666;
+        transform: translateX(8px);
+    }
+
+
+
+      /****************************Pagination*********************************/
+
+
+    .pag-h3{
+        margin-top: 60px;
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+        font-size: 24px;
+    }
+      
+    .parag{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-left: 20px;
+    }
+
+
+    .pagination{
+        display: inline-block;
+        margin-left: 150px;
+    }
+
+    .pagination a{
+        color: black;
+        float: left;
+        padding: 8px 28px;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .pagination .active{
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        background-color: rgb(136, 81, 81);
+        color: white;
+    }
+
+    .pagination a:hover:not(.active){
+        background-color: darkolivegreen;
+        color: white;
+    }
+
+    .pagination2{
+        display: inline-block;
+        margin-left: 150px;
+        margin-top: 40px;
+    }
+
+    .pagination2 a{
+        color: black;
+        float: left;
+        padding: 8px 28px;
+        text-decoration: none;
+        border-radius: 15px;
+        transition: all 0.4s ease;
+        border-radius: 8px;
+    }
+
+    .pagination2 .active{
+        background-color: rgb(197, 129, 3);
+        color: white;
+    }
+
+    .pagination2 a:hover:not(.active){
+        background-color: rgb(38, 150, 255);
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
